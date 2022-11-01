@@ -18,15 +18,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--Кнопка смена темы-->
     <Button
         android:id="@+id/btn_Theme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Сменить ТЕму"
+        android:text="Сменить Тему"
         app:layout_constraintEnd_toEndOf="@+id/Theme"
         app:layout_constraintStart_toStartOf="@+id/Theme"
         app:layout_constraintTop_toBottomOf="@+id/Theme" />
 
+    <!--Календарь-->
     <Button
         android:id="@+id/PickDate"
         android:layout_width="wrap_content"
@@ -37,6 +39,7 @@
         app:layout_constraintStart_toStartOf="@+id/btn_Theme"
         app:layout_constraintTop_toBottomOf="@+id/btn_Theme" />
 
+    <!--Отображение выбранной даты-->
     <TextView
         android:id="@+id/textDate"
         android:layout_width="wrap_content"
@@ -48,4 +51,15 @@
         app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="@+id/PickDate"
         app:layout_constraintTop_toBottomOf="@+id/PickDate" />
+
+    <!--Кнопка назад-->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Назад"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

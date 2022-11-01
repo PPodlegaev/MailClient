@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
+    <!--Переход на страницу Настройки-->
     <Button
         android:id="@+id/PageSettings"
         android:layout_width="wrap_content"
@@ -86,6 +86,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
+    <!--Кнопка отправки сообщений-->
     <Button
         android:id="@+id/sendBtn"
         android:layout_width="wrap_content"
@@ -96,6 +97,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Message" />
 
+    <!--Кнопка по выбору картинки-->
     <Button
         android:id="@+id/btAttachment"
         android:layout_width="wrap_content"
@@ -106,6 +108,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Message" />
 
+    <!--Отображение названия картинки-->
     <TextView
         android:id="@+id/File"
         android:layout_width="wrap_content"
