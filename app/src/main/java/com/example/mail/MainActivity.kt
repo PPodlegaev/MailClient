@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
     private val pickFromGallery:Int = 101
-    private lateinit var uri: Uri
+    private var uri: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == pickFromGallery && resultCode == RESULT_OK) {
             if (data != null) {
                 uri = data.data!!
-                binding.File.text = uri.lastPathSegment
+                binding.File.text = uri!!.lastPathSegment
                 binding.File.visibility = View.VISIBLE
             }
 
